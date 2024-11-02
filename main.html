@@ -7,9 +7,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+	<style>
+        table {
+            border-collapse: collapse; /* Combine borders */
+            width: 100%;
+			border-radius: 10px;
+			overflow: hidden;/* Full width for better layout */
+        }
+        th, td {
+			
+            border: 1px solid black;
+            padding: 8px; /* Adds space inside cells */
+            text-align: left; /* Align text to the left */
+        }
+        th {
+            background-color: lightblue; /* Light gray background for header */
+           }
+		.specific-row {
+            background-color: lightgrey; /* Specific color for the third row */
+        }
+    </style>
+</head>
 <body>
-    <!-- add table here -->
-
-        
+    <table>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>KILLS</th>
+                <th>SAVED</th>
+                <th>DEATHS</th>
+                <th>REVIVES</th>
+                <th>WIN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Hackerman</td>
+                <td>10</td>
+                <td>14</td>
+                <td>22</td>
+                <td>9</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Andrews</td>
+                <td>10</td>
+                <td>13</td>
+                <td>11</td>
+                <td>20</td>
+                <td>0</td>
+            </tr>
+            <tr class="specific-row">
+                <td>Basant</td>
+                <td>19</td>
+                <td>20</td>
+                <td>22</td>
+                <td>44</td>
+                <td>1</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
